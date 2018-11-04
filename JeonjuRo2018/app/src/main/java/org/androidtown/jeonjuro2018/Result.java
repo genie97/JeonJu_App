@@ -38,11 +38,9 @@ public class Result extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int num = 10;
-                Toast.makeText(getApplicationContext(),num, Toast.LENGTH_LONG).show();
-                //Intent myintent = new Intent(otherway.this,bestway.class); 예지페이지로 넘어가라
-                //startActivity(myintent);
-                //finish();
+                Intent myintent = new Intent(Result.this,ScheduleActivity.class);
+                startActivity(myintent);
+                finish();
             }
         });
     }

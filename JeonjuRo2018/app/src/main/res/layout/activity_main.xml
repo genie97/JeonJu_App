@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <LinearLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:fitsSystemWindows="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!--홈버튼 부분-->
+        <info.hoang8f.android.segmented.SegmentedGroup
+            android:id="@+id/topbar_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            segmentedgroup:sc_border_width="1dp"
+            segmentedgroup:sc_corner_radius="5dp">
+
+            <RadioButton
+                android:id="@+id/home_topbar"
+                style="@style/RadioButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="0dp"
+                android:layout_weight="25"
+                android:fontFamily="@font/binggrae"
+                android:padding="0dp"
+                android:text="홈"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/yellow"/>
+
+            <RadioButton
+                android:id="@+id/custom_topbar"
+                style="@style/RadioButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="0dp"
+                android:layout_weight="25"
+                android:fontFamily="@font/binggrae"
+                android:padding="0dp"
+                android:text="맞춤추천"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/yellow" />
+
+            <RadioButton
+                android:id="@+id/schedule_topbar"
+                style="@style/RadioButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="0dp"
+                android:layout_weight="25"
+                android:padding="0dp"
+                android:text="일정등록"
+                android:textAllCaps="false"
+                android:fontFamily="@font/binggrae"
+                android:backgroundTint="@color/yellow"/>
+        </info.hoang8f.android.segmented.SegmentedGroup>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--관광지-->
+            <LinearLayout
+                android:id="@+id/tour_layout"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/tourLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tourText"
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:fontFamily="@font/binggrae"
+                            android:paddingLeft="20dp"
+                            android:text="관광지 Top4"
+                            android:textSize="20dp" />
+
+                        <ImageButton
+                            android:id="@+id/tourBtn"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="fitXY"
+                            android:layout_toRightOf="@+id/tourText"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/plus" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/tourImage"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_below="@+id/tourLayout"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/tour" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--맛집-->
+            <LinearLayout
+                android:id="@+id/rest_layout"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@+id/tour_layout"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/restLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/restText"
+                            android:layout_width="65dp"
+                            android:layout_height="30dp"
+                            android:fontFamily="@font/binggrae"
+                            android:paddingLeft="20dp"
+                            android:text="맛집 Top4"
+                            android:textSize="20dp" />
+
+                        <ImageButton
+                            android:id="@+id/restBtn"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="fitXY"
+                            android:layout_toRightOf="@+id/restText"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/plus" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_below="@+id/restLayout"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/rest" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--숙소-->
+            <LinearLayout
+                android:id="@+id/accomo_layout"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@+id/rest_layout"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/accomoLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/accomoText"
+                            android:layout_width="65dp"
+                            android:layout_height="30dp"
+                            android:fontFamily="@font/binggrae"
+                            android:paddingLeft="20dp"
+                            android:text="숙소 Top4"
+                            android:textSize="20dp" />
+
+                        <ImageButton
+                            android:id="@+id/accomoBtn"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="fitXY"
+                            android:layout_toRightOf="@+id/accomoText"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/plus" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_below="@+id/accomoLayout"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/accomo" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

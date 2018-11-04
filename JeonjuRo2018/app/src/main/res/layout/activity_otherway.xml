@@ -65,7 +65,7 @@
 
     <Button
         android:id="@+id/button"
-        android:background="@drawable/button_corner"
+        android:background="@drawable/button_design"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
