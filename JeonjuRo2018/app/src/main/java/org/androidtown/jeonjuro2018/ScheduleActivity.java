@@ -1,6 +1,7 @@
 package org.androidtown.jeonjuro2018;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -17,8 +18,6 @@ import com.kakao.kakaolink.KakaoTalkLinkMessageBuilder;
 
 
 public class ScheduleActivity extends AppCompatActivity implements View.OnClickListener{
-
-    private static final String CAPTURE_PATH = "/CAPTURE";
 
     ImageButton bus_btn;
     ImageButton walk_btn;
