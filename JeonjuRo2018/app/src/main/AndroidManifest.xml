@@ -44,6 +44,8 @@
         <activity
             android:name="org.androidtown.jeonjuro2018.SplashActivity"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:name="org.androidtown.jeonjuro2018.Otherway" />
+        <activity android:name="org.androidtown.jeonjuro2018.Result" />
         <activity android:name="org.androidtown.jeonjuro2018.TourMain" />
         <activity android:name="org.androidtown.jeonjuro2018.RestMain" />
         <activity android:name="org.androidtown.jeonjuro2018.AccomoMain" />

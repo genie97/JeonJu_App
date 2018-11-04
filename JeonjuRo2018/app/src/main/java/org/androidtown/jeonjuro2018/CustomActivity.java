@@ -20,10 +20,12 @@ import android.widget.Toast;
 import java.util.StringTokenizer;
 
 public class CustomActivity extends AppCompatActivity implements Button.OnClickListener {
+    Button checkBtn;
     Button oneday, twoday, threeday, fourday;
     Button traveler_friend, traveler_lover, traveler_family, traveler_alone;
     Button goal_picture, goal_eating, goal_activity;
     Button tendency_diligent, tendency_nodili;
+    RadioButton schedule_topbar,home_topbar;
     LinearLayout second_bar;
     AppCompatDialog progressDialog;
     RadioButton custom_topbar;
@@ -35,7 +37,6 @@ public class CustomActivity extends AppCompatActivity implements Button.OnClickL
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_custom);
-
 
         oneday = findViewById(R.id.oneday);
         twoday = findViewById(R.id.twoday);
@@ -56,14 +57,14 @@ public class CustomActivity extends AppCompatActivity implements Button.OnClickL
 
         custom_topbar = findViewById(R.id.custom_topbar);
 
-        Button checkBtn = (Button)findViewById(R.id.checkBtn); //조사하기 버튼
+        checkBtn = (Button)findViewById(R.id.checkBtn); //조사하기 버튼
 
         /*메뉴 라디오 버튼*/
-        RadioButton schedule_topbar = (RadioButton) findViewById(R.id.schedule_topbar);
-        RadioButton home_topbar = (RadioButton)findViewById(R.id.home_topbar);
+        schedule_topbar = (RadioButton) findViewById(R.id.schedule_topbar);
+        home_topbar = (RadioButton)findViewById(R.id.home_topbar);
 
-        /*클릭리스너*/
         schedule_topbar.setOnClickListener(this);
+        custom_topbar.setOnClickListener(this);
         home_topbar.setOnClickListener(this);
 
         oneday.setOnClickListener(this);
@@ -95,6 +96,13 @@ public class CustomActivity extends AppCompatActivity implements Button.OnClickL
     public void onClick(View view) {
         buttonName = view.getResources().getResourceEntryName(view.getId());
         switch (view.getId()) {
+            case R.id.home_topbar:
+                break;
+            
+            case R.id.schedule_topbar:
+                startActivity(new Intent(CustomActivity.this, TourMain.class));
+                break;
+
             case R.id.oneday:
                 temp = oneday;
                 id_num = 1;
@@ -284,7 +292,6 @@ public class CustomActivity extends AppCompatActivity implements Button.OnClickL
             String[] research = new String[countTokens]; //5
             int[] aa = new int[countTokens]; //5
             int t = 0;
-
             /*클릭된거 문자열로 알려주는 코드 */
             while (stringTokenizer.hasMoreTokens()) {
                 String data = stringTokenizer.nextToken();
@@ -320,7 +327,7 @@ public class CustomActivity extends AppCompatActivity implements Button.OnClickL
                     }
                 }
             }
-            //startActivity(new Intent(CustomActivity.this, Otherway.class));
+            startActivity(new Intent(CustomActivity.this, Otherway.class));
         }
     }
 
@@ -383,5 +390,3 @@ public class CustomActivity extends AppCompatActivity implements Button.OnClickL
         }, 2000);
     }
 }
-
-

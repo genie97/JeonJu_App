@@ -24,7 +24,7 @@ public class Otherway extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myintent = new Intent(Otherway.this,Result.class);
+                Intent myintent = new Intent(Otherway.this,CustomActivity.class);
                 startActivity(myintent);
                 finish();
             }
