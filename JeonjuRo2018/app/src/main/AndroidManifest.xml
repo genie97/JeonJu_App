@@ -15,8 +15,6 @@
         android:theme="@style/AppTheme">
         <activity android:name=".ScheduleActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
             <intent-filter>
@@ -36,6 +34,25 @@
             android:value="@string/kakao_app_key" />
 
         <activity android:name=".CustomActivity"></activity>
+
+        <activity android:name="org.androidtown.jeonjuro2018.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.androidtown.jeonjuro2018.SplashActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:name="org.androidtown.jeonjuro2018.TourMain" />
+        <activity android:name="org.androidtown.jeonjuro2018.RestMain" />
+        <activity android:name="org.androidtown.jeonjuro2018.AccomoMain" />
+        <activity android:name="org.androidtown.jeonjuro2018.scheduleMain" />
+        <activity android:name="org.androidtown.jeonjuro2018.selectMain" />
+        <activity
+            android:name="org.androidtown.jeonjuro2018.LocationDialog"
+            android:theme="@style/Dialog" />
+
     </application>
 
 </manifest>
