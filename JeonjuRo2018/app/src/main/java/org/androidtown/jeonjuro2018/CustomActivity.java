@@ -98,9 +98,11 @@ public class CustomActivity extends AppCompatActivity implements Button.OnClickL
         switch (view.getId()) {
             case R.id.home_topbar:
                 break;
+            
             case R.id.schedule_topbar:
                 startActivity(new Intent(CustomActivity.this, TourMain.class));
                 break;
+
             case R.id.oneday:
                 temp = oneday;
                 id_num = 1;
