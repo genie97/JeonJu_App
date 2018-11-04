@@ -1,6 +1,7 @@
 package org.androidtown.jeonjuro2018;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Handler;
@@ -54,6 +55,16 @@ public class CustomActivity extends AppCompatActivity implements Button.OnClickL
         tendency_nodili = findViewById(R.id.tendency_nodili);
 
         custom_topbar = findViewById(R.id.custom_topbar);
+
+        Button checkBtn = (Button)findViewById(R.id.checkBtn); //조사하기 버튼
+
+        /*메뉴 라디오 버튼*/
+        RadioButton schedule_topbar = (RadioButton) findViewById(R.id.schedule_topbar);
+        RadioButton home_topbar = (RadioButton)findViewById(R.id.home_topbar);
+
+        /*클릭리스너*/
+        schedule_topbar.setOnClickListener(this);
+        home_topbar.setOnClickListener(this);
 
         oneday.setOnClickListener(this);
         twoday.setOnClickListener(this);
@@ -309,6 +320,7 @@ public class CustomActivity extends AppCompatActivity implements Button.OnClickL
                     }
                 }
             }
+            //startActivity(new Intent(CustomActivity.this, Otherway.class));
         }
     }
 
