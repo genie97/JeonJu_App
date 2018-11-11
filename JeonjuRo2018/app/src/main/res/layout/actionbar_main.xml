@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/orange">
+
+    <ImageButton
+        android:id="@+id/menuBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/bus" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_toRightOf="@+id/menuBtn"
+        android:fontFamily="@font/binggraebold"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:text="내 맘대로 전주로"
+        android:textColor="@android:color/white"
+        android:textSize="25dp" />
+</RelativeLayout>
+
