@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.hd.viewcapture:viewcapture-1.4">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/viewcapture-1.4.aar/9ad7d968701f49ea2f07b4b311acac40/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/viewcapture-1.4.aar/9ad7d968701f49ea2f07b4b311acac40/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.hd.viewcapture/viewcapture/1.4/2b78a275763683f8e8e8da82eec6500f637b8317/viewcapture-1.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,216 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:2:1-58:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\cbb6a4267213e9987ab47c5c4465c0ea\AndroidManifest.xml:17:1-22:12
+MERGED from [jp.wasabeef:glide-transformations:2.0.1] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\glide-transformations-2.0.1.aar\5745d828b69014a0bac49ba0b7841dee\AndroidManifest.xml:2:1-12:12
+MERGED from [com.hd.viewcapture:viewcapture:1.4] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\viewcapture-1.4.aar\9ad7d968701f49ea2f07b4b311acac40\AndroidManifest.xml:2:1-11:12
+MERGED from [com.kakao.sdk:kakaolink:1.1.7] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\kakaolink-1.1.7.aar\890b55e6845900f7da3e32ef47cff9a9\AndroidManifest.xml:2:1-15:12
+MERGED from [info.hoang8f:android-segmented:1.0.6] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\android-segmented-1.0.6.aar\ab8785927a26cd2ae8b0baafce9443d6\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\c717e9c0cfa161f75032c5a449f03006\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\a19ed35a9fda80c60cbee86d37aa2929\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\cac7b37cbec4a4d0ea1becb3edb5897e\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\d951c5178a2626a132fdc15c21d4e3f4\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\c2bd229ca27c9f66f4af7f444a426ec3\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\6c3b4e529dff29d5fc01fad6ef17f4a0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\567fde500bf39e648a450eff70c10010\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\13997149706a3c2026e5f219a28fe20f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\f8a900fd4ddba0e1df8e83520ffdd69b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.kakao.sdk:util:1.1.7] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\util-1.1.7.aar\be035385fc26ee145ce5c4f788966bbb\AndroidManifest.xml:2:1-15:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\9d8971ef9947f3152a567b870693daaa\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\6b2cdc344ecad58c3f1bf3a442e47ed3\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\d0098d2d2e3bf9b0740a5d4701b68e52\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\4455d4a2ed03368db96f49afcff38fc4\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:2:1-58:12
+	package
+		ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:3:5-43
+		INJECTED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:2:1-58:12
+		INJECTED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:2:1-58:12
+		INJECTED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:5:5-81
+	android:name
+		ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:5:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:6:5-80
+	android:name
+		ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:6:22-77
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:7:5-67
+	android:name
+		ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:7:22-64
+application
+ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:9:5-57:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\cac7b37cbec4a4d0ea1becb3edb5897e\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\cac7b37cbec4a4d0ea1becb3edb5897e\AndroidManifest.xml:9:5-20
+	android:supportsRtl
+		ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:14:9-35
+	android:label
+		ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:12:9-41
+	android:roundIcon
+		ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:13:9-54
+	android:icon
+		ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:11:9-42
+	android:allowBackup
+		ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:10:9-35
+	android:theme
+		ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:15:9-40
+activity#org.androidtown.jeonjuro2018.ScheduleActivity
+ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:16:9-30:20
+	android:name
+		ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:16:19-51
+intent-filter#category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:17:13-19:29
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:18:17-77
+	android:name
+		ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:18:27-74
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:@string/kakaolint_host+data:scheme:@string/kakao_scheme
+ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:20:13-29:29
+action#android.intent.action.VIEW
+ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:21:17-69
+	android:name
+		ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:21:25-66
+category#android.intent.category.DEFAULT
+ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:23:17-76
+	android:name
+		ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:23:27-73
+category#android.intent.category.BROWSABLE
+ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:24:17-78
+	android:name
+		ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:24:27-75
+data
+ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:26:17-28:61
+	android:host
+		ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:27:21-58
+	android:scheme
+		ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:28:21-58
+meta-data#com.kakao.sdk.AppKey
+ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:32:9-34:53
+	android:value
+		ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:34:13-50
+	android:name
+		ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:33:13-48
+activity#org.androidtown.jeonjuro2018.CustomActivity
+ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:36:9-52
+	android:name
+		ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:36:19-49
+activity#org.androidtown.jeonjuro2018.MainActivity
+ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:37:9-42:20
+	android:name
+		ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:37:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:38:13-41:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:39:17-69
+	android:name
+		ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:39:25-66
+activity#org.androidtown.jeonjuro2018.SplashActivity
+ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:43:9-45:74
+	android:theme
+		ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:45:13-71
+	android:name
+		ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:44:13-43
+activity#org.androidtown.jeonjuro2018.Otherway
+ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:46:9-46
+	android:name
+		ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:46:19-43
+activity#org.androidtown.jeonjuro2018.Result
+ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:47:9-44
+	android:name
+		ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:47:19-41
+activity#org.androidtown.jeonjuro2018.TourMain
+ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:48:9-46
+	android:name
+		ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:48:19-43
+activity#org.androidtown.jeonjuro2018.RestMain
+ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:49:9-46
+	android:name
+		ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:49:19-43
+activity#org.androidtown.jeonjuro2018.AccomoMain
+ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:50:9-48
+	android:name
+		ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:50:19-45
+activity#org.androidtown.jeonjuro2018.scheduleMain
+ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:51:9-50
+	android:name
+		ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:51:19-47
+activity#org.androidtown.jeonjuro2018.selectMain
+ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:52:9-48
+	android:name
+		ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:52:19-45
+activity#org.androidtown.jeonjuro2018.LocationDialog
+ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:53:9-55:45
+	android:theme
+		ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:55:13-42
+	android:name
+		ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:54:13-43
+activity#org.androidtown.jeonjuro2018.HomeActivity
+ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:56:9-59
+	android:name
+		ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml:56:19-47
+uses-sdk
+INJECTED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\cbb6a4267213e9987ab47c5c4465c0ea\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\cbb6a4267213e9987ab47c5c4465c0ea\AndroidManifest.xml:20:5-44
+MERGED from [jp.wasabeef:glide-transformations:2.0.1] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\glide-transformations-2.0.1.aar\5745d828b69014a0bac49ba0b7841dee\AndroidManifest.xml:8:5-10:41
+MERGED from [jp.wasabeef:glide-transformations:2.0.1] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\glide-transformations-2.0.1.aar\5745d828b69014a0bac49ba0b7841dee\AndroidManifest.xml:8:5-10:41
+MERGED from [com.hd.viewcapture:viewcapture:1.4] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\viewcapture-1.4.aar\9ad7d968701f49ea2f07b4b311acac40\AndroidManifest.xml:7:5-9:41
+MERGED from [com.hd.viewcapture:viewcapture:1.4] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\viewcapture-1.4.aar\9ad7d968701f49ea2f07b4b311acac40\AndroidManifest.xml:7:5-9:41
+MERGED from [com.kakao.sdk:kakaolink:1.1.7] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\kakaolink-1.1.7.aar\890b55e6845900f7da3e32ef47cff9a9\AndroidManifest.xml:11:5-13:41
+MERGED from [com.kakao.sdk:kakaolink:1.1.7] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\kakaolink-1.1.7.aar\890b55e6845900f7da3e32ef47cff9a9\AndroidManifest.xml:11:5-13:41
+MERGED from [info.hoang8f:android-segmented:1.0.6] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\android-segmented-1.0.6.aar\ab8785927a26cd2ae8b0baafce9443d6\AndroidManifest.xml:7:5-9:41
+MERGED from [info.hoang8f:android-segmented:1.0.6] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\android-segmented-1.0.6.aar\ab8785927a26cd2ae8b0baafce9443d6\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\c717e9c0cfa161f75032c5a449f03006\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\c717e9c0cfa161f75032c5a449f03006\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\a19ed35a9fda80c60cbee86d37aa2929\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\a19ed35a9fda80c60cbee86d37aa2929\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\cac7b37cbec4a4d0ea1becb3edb5897e\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\cac7b37cbec4a4d0ea1becb3edb5897e\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\d951c5178a2626a132fdc15c21d4e3f4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\d951c5178a2626a132fdc15c21d4e3f4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\c2bd229ca27c9f66f4af7f444a426ec3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\c2bd229ca27c9f66f4af7f444a426ec3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\6c3b4e529dff29d5fc01fad6ef17f4a0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\6c3b4e529dff29d5fc01fad6ef17f4a0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\567fde500bf39e648a450eff70c10010\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\567fde500bf39e648a450eff70c10010\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\13997149706a3c2026e5f219a28fe20f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\13997149706a3c2026e5f219a28fe20f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\f8a900fd4ddba0e1df8e83520ffdd69b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\f8a900fd4ddba0e1df8e83520ffdd69b\AndroidManifest.xml:20:5-44
+MERGED from [com.kakao.sdk:util:1.1.7] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\util-1.1.7.aar\be035385fc26ee145ce5c4f788966bbb\AndroidManifest.xml:11:5-13:41
+MERGED from [com.kakao.sdk:util:1.1.7] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\util-1.1.7.aar\be035385fc26ee145ce5c4f788966bbb\AndroidManifest.xml:11:5-13:41
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\9d8971ef9947f3152a567b870693daaa\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\9d8971ef9947f3152a567b870693daaa\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\6b2cdc344ecad58c3f1bf3a442e47ed3\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\6b2cdc344ecad58c3f1bf3a442e47ed3\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\d0098d2d2e3bf9b0740a5d4701b68e52\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\d0098d2d2e3bf9b0740a5d4701b68e52\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\4455d4a2ed03368db96f49afcff38fc4\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\CHOI\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\4455d4a2ed03368db96f49afcff38fc4\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\CHOI\AndroidStudioProjects\JeonjuRo2018\app\src\main\AndroidManifest.xml
