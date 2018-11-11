@@ -1,6 +1,7 @@
 package org.androidtown.jeonjuro2018;
 
 import android.content.Intent;
+
 import android.graphics.Bitmap;
 
 import android.os.StrictMode;
@@ -12,6 +13,7 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
+
 import android.widget.ImageView;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserFactory;
@@ -39,6 +41,11 @@ public class RestMain extends AppCompatActivity {
         restRecyclerView.setHasFixedSize(true);
         restLayoutManager = new LinearLayoutManager(this);
         restRecyclerView.setLayoutManager(restLayoutManager);
+
+        ArrayList<TourInfo> tourInfoArrayList = new ArrayList<>();
+//        tourInfoArrayList.add(new TourInfo(R.drawable.rest,"전주한옥2","위치는~"));
+ //       tourInfoArrayList.add(new TourInfo(R.drawable.rest,"전주한옥3","위치는~"));
+  //      tourInfoArrayList.add(new TourInfo(R.drawable.rest,"전주한옥4","위치는~"));
 
         ArrayList<FoodInfo> foodInfoArrayList = new ArrayList<>();
         FoodInfo food = null;
@@ -526,6 +533,7 @@ public class RestMain extends AppCompatActivity {
         } catch (Exception e) {
         }
 
+
         View.OnClickListener mListener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -534,12 +542,12 @@ public class RestMain extends AppCompatActivity {
                 startActivity(intent);
             }
         };
+    }
 
         FoodAdapter myAdapter = new FoodAdapter(this,foodInfoArrayList,mListener);
         restRecyclerView.setAdapter(myAdapter);
 
     }
-
 
     private void setCustomActionbar() {
         ActionBar actionBar = getSupportActionBar();
@@ -560,4 +568,5 @@ public class RestMain extends AppCompatActivity {
     }
 
 }
+
 

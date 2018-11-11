@@ -61,9 +61,12 @@ public class LocationDialog extends AppCompatActivity {
         task.execute(url); //uri 이미지로 뜨게.
         title_text.setText(name);
         location.setText(locat);
+        description.setText(des);
+
+
+
         Linkify.addLinks(location, Linkify.WEB_URLS);
 
-        description.setText(des);
 
         Button okBtn = (Button) findViewById(R.id.okBtn);
         okBtn.setOnClickListener(new View.OnClickListener() {
@@ -97,5 +100,5 @@ public class LocationDialog extends AppCompatActivity {
             tourImage.setImageBitmap(bmImg);
         }
     }
-
 }
+

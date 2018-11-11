@@ -84,7 +84,19 @@ public class CustomActivity extends AppCompatActivity implements Button.OnClickL
         tendency_diligent.setOnClickListener(this);
         tendency_nodili.setOnClickListener(this);
 
+        home_topbar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(CustomActivity.this, MainActivity.class));
+            }
+        });
 
+        schedule_topbar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(CustomActivity.this, TourMain.class));
+            }
+        });
     }
 
     int[][] travel = {{0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}};
@@ -96,13 +108,6 @@ public class CustomActivity extends AppCompatActivity implements Button.OnClickL
     public void onClick(View view) {
         buttonName = view.getResources().getResourceEntryName(view.getId());
         switch (view.getId()) {
-            case R.id.home_topbar:
-                break;
-            
-            case R.id.schedule_topbar:
-                startActivity(new Intent(CustomActivity.this, TourMain.class));
-                break;
-
             case R.id.oneday:
                 temp = oneday;
                 id_num = 1;
@@ -327,7 +332,6 @@ public class CustomActivity extends AppCompatActivity implements Button.OnClickL
                     }
                 }
             }
-            startActivity(new Intent(CustomActivity.this, Otherway.class));
         }
     }
 
@@ -386,6 +390,7 @@ public class CustomActivity extends AppCompatActivity implements Button.OnClickL
             @Override
             public void run() {
                 progressOFF();
+                startActivity(new Intent(CustomActivity.this, Otherway.class));
             }
         }, 2000);
     }

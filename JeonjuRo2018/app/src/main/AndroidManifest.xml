@@ -33,28 +33,26 @@
             android:name="com.kakao.sdk.AppKey"
             android:value="@string/kakao_app_key" />
 
-        <activity android:name=".CustomActivity"></activity>
-
-        <activity android:name="org.androidtown.jeonjuro2018.MainActivity">
+        <activity android:name=".CustomActivity" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name="org.androidtown.jeonjuro2018.SplashActivity"
+            android:name=".SplashActivity"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-        <activity android:name="org.androidtown.jeonjuro2018.Otherway" />
-        <activity android:name="org.androidtown.jeonjuro2018.Result" />
-        <activity android:name="org.androidtown.jeonjuro2018.TourMain" />
-        <activity android:name="org.androidtown.jeonjuro2018.RestMain" />
-        <activity android:name="org.androidtown.jeonjuro2018.AccomoMain" />
-        <activity android:name="org.androidtown.jeonjuro2018.scheduleMain" />
-        <activity android:name="org.androidtown.jeonjuro2018.selectMain" />
+        <activity android:name=".Otherway" />
+        <activity android:name=".Result" />
+        <activity android:name=".TourMain" />
+        <activity android:name=".RestMain" />
+        <activity android:name=".AccomoMain" />
+        <activity android:name=".scheduleMain" />
+        <activity android:name=".selectMain" />
         <activity
-            android:name="org.androidtown.jeonjuro2018.LocationDialog"
+            android:name=".LocationDialog"
             android:theme="@style/Dialog" />
-
+        <activity android:name=".HomeActivity"></activity>
     </application>
-
 </manifest>

@@ -129,6 +129,7 @@ public class TourMain extends AppCompatActivity {
         } catch (Exception e) {
         }
 
+
         MyAdapter myAdapter = new MyAdapter(this, tourInfoArrayList);
         accomoRecyclerView.setAdapter(myAdapter);
     }

@@ -1,15 +1,44 @@
 package org.androidtown.jeonjuro2018;
 
+
+import android.content.Context;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.view.ViewPager;
+
 import android.provider.MediaStore;
+
 import android.support.v7.app.ActionBar;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
+
+import android.widget.HorizontalScrollView;
 import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.support.v7.widget.Toolbar;
+import android.widget.ScrollView;
+import android.widget.TextView;
+
+import org.xmlpull.v1.XmlPullParser;
+import org.xmlpull.v1.XmlPullParserFactory;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.util.ArrayList;
+
+import info.hoang8f.android.segmented.SegmentedGroup;
+
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+    TextView textView;
+    ImageView imageView;
+ HorizontalScrollView scrollbar_accomo;
+RadioButton homeTopbar;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     @Override
@@ -17,14 +46,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setCustomActionbar();
+
+        homeTopbar = (RadioButton)findViewById(R.id.home_topbar);
+       homeTopbar.toggle();
+
         Intent intent = new Intent(this, SplashActivity.class);
         startActivity(intent);
-
-
+        //   LinearLayout container = (LinearLayout)findViewById(R.id.container);
         ImageButton tourBtn = (ImageButton) findViewById(R.id.tourBtn);
         ImageButton restBtn = (ImageButton) findViewById(R.id.restBtn);
         ImageButton accomoBtn = (ImageButton) findViewById(R.id.accomoBtn);
-
+   //     scrollbar_accomo = (HorizontalScrollView) findViewById(R.id.s);
+    //    scrollbar_accomo.setVerticalScrollBarEnabled(false);
+     //   scrollbar_accomo.setHorizontalScrollBarEnabled(false);
 
         RadioButton schedule_topbar = (RadioButton) findViewById(R.id.schedule_topbar);
         RadioButton custom_topbar = (RadioButton) findViewById(R.id.custom_topbar);
@@ -50,7 +84,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Toolbar parent = (Toolbar) mCustomView.getParent();
         parent.setContentInsetsAbsolute(0, 0);
 
-        ActionBar.LayoutParams params = new ActionBar.LayoutParams(ActionBar.LayoutParams.MATCH_PARENT);
+        ActionBar.LayoutParams params = new ActionBar.LayoutParams(ActionBar.LayoutParams.WRAP_CONTENT);
+
         actionBar.setCustomView(mCustomView, params);
     }
 

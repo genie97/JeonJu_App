@@ -13,6 +13,10 @@ public class Place {
 
     public Place (String name, int imgno) {
 
+
+    public   String name;
+    public String imgno;
+
         this.name = name;
         this.imgno = imgno;
     }
@@ -24,6 +28,14 @@ public class Place {
     public void setName(String name) {
         this.name = name;
     }
+
+    public int getImagno() {
+        return imgno;
+    }
+
+    public void setImgno(int imgno) {
+
+    public String getImagno() {
 
     public int getImagno() {
         return imgno;

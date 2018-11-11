@@ -15,7 +15,8 @@
         android:id="@+id/linear"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:id = "@+id/linear">
 
         <ImageView
             android:id="@+id/tour_picture"
@@ -29,8 +30,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:layout_margin="10dp"
-            >
+
+            android:layout_margin="10dp">
 
             <TextView
                 android:id="@+id/tour_name"
@@ -50,7 +51,6 @@
                 android:text="위치"
                 android:fontFamily="@font/binggrae"
                 android:textSize="13sp" />
-
             <TextView
                 android:id="@+id/tour_content"
                 android:layout_width="wrap_content"
@@ -60,9 +60,7 @@
                 android:id="@+id/tour_homepage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="0sp" />
-
-
+                android:textSize="0sp"/>
         </RelativeLayout>
     </LinearLayout>
 </android.support.v7.widget.CardView>
