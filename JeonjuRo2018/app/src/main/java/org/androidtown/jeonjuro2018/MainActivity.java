@@ -37,18 +37,19 @@ import info.hoang8f.android.segmented.SegmentedGroup;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     TextView textView;
     ImageView imageView;
- HorizontalScrollView scrollbar_accomo;
-RadioButton homeTopbar;
+    HorizontalScrollView scrollbar_accomo;
+    RadioButton homeTopbar;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setCustomActionbar();
 
-        homeTopbar = (RadioButton)findViewById(R.id.home_topbar);
-       homeTopbar.toggle();
+        homeTopbar = (RadioButton) findViewById(R.id.home_topbar);
+        homeTopbar.toggle();
+
 
         Intent intent = new Intent(this, SplashActivity.class);
         startActivity(intent);
@@ -56,9 +57,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         ImageButton tourBtn = (ImageButton) findViewById(R.id.tourBtn);
         ImageButton restBtn = (ImageButton) findViewById(R.id.restBtn);
         ImageButton accomoBtn = (ImageButton) findViewById(R.id.accomoBtn);
-   //     scrollbar_accomo = (HorizontalScrollView) findViewById(R.id.s);
-    //    scrollbar_accomo.setVerticalScrollBarEnabled(false);
-     //   scrollbar_accomo.setHorizontalScrollBarEnabled(false);
+        //     scrollbar_accomo = (HorizontalScrollView) findViewById(R.id.s);
+        //    scrollbar_accomo.setVerticalScrollBarEnabled(false);
+        //   scrollbar_accomo.setHorizontalScrollBarEnabled(false);
+
 
         RadioButton schedule_topbar = (RadioButton) findViewById(R.id.schedule_topbar);
         RadioButton custom_topbar = (RadioButton) findViewById(R.id.custom_topbar);

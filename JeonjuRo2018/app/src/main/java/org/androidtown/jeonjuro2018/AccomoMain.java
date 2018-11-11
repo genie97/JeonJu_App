@@ -31,8 +31,6 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.channels.Channel;
 
-
-
 import java.util.ArrayList;
 
 public class AccomoMain extends AppCompatActivity {
@@ -123,9 +121,9 @@ public class AccomoMain extends AppCompatActivity {
                         if (parser.getName().equals("list")) {
                             comeonImage(dataSid);
                             if (i != 1) {
-                                tourInfoArrayList.add(new TourInfo(fileUrl, dataTitle, addr,introContent, homepage));
+                                tourInfoArrayList.add(new TourInfo(fileUrl, dataTitle, addr, introContent, homepage));
                             } else {
-                                tourInfoArrayList.add(new TourInfo("http://tour.jeonju.go.kr/planweb/upload/9be517a74f72e96b014f820463970068/inine/content/preview/2dc57345-3f23-47d7-842c-712ca4807a78.jpg.png", dataTitle, addr,introContent, homepage));
+                                tourInfoArrayList.add(new TourInfo("http://tour.jeonju.go.kr/planweb/upload/9be517a74f72e96b014f820463970068/inine/content/preview/2dc57345-3f23-47d7-842c-712ca4807a78.jpg.png", dataTitle, addr, introContent, homepage));
                                 i = 0;
                             }
                         }
@@ -181,8 +179,6 @@ public class AccomoMain extends AppCompatActivity {
         } catch (Exception e) {
         }
     }
-
- }
 
     private void setCustomActionbar() {
         ActionBar actionBar = getSupportActionBar();

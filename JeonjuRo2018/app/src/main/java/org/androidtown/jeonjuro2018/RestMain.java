@@ -542,8 +542,6 @@ public class RestMain extends AppCompatActivity {
                 startActivity(intent);
             }
         };
-    }
-
         FoodAdapter myAdapter = new FoodAdapter(this,foodInfoArrayList,mListener);
         restRecyclerView.setAdapter(myAdapter);
 

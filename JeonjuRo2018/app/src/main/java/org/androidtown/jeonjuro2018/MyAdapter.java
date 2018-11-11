@@ -31,6 +31,7 @@ public class MyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     }
 
+    }
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -38,10 +39,9 @@ public class MyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         return new MyViewHolder(v);
     }
 
-
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-      final  TourInfo data = tourInfoArrayList.get(position);
+        final TourInfo data = tourInfoArrayList.get(position);
         MyViewHolder myViewHolder = (MyViewHolder) holder;
 
         Glide.with(mContext)
@@ -52,12 +52,12 @@ public class MyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         myViewHolder.tourLocation.setText(tourInfoArrayList.get(position).tourLocation);
         myViewHolder.tourContent.setText(tourInfoArrayList.get(position).dataContent);
         myViewHolder.homepage.setText(tourInfoArrayList.get(position).homepage);
-        myViewHolder.linearLayout.setOnClickListener(new View.OnClickListener(){
+        myViewHolder.linearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v){
+            public void onClick(View v) {
                 Intent intent = new Intent(mContext, LocationDialog.class);
                 intent.putExtra("name", data.getTourName());
-                intent.putExtra("location",  data.getTourLocation()  +data.getHomepage());
+                intent.putExtra("location", data.getTourLocation()+"\n" + data.getHomepage());
                 intent.putExtra("url", data.getUrl());
                 intent.putExtra("dataContent", data.getDataContent());
               
@@ -65,38 +65,8 @@ public class MyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             }
         });
 
-
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.recycler_view_row, parent, false);
         return new MyViewHolder(v);
-    }
-
-
-    @Override
-    public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-        final  TourInfo data = tourInfoArrayList.get(position);
-        MyViewHolder myViewHolder = (MyViewHolder) holder;
-
-        Glide.with(mContext)
-                .load(data.getUrl()).asBitmap()
-                .fitCenter()
-                .into(((MyViewHolder) holder).tourPicture);
-        myViewHolder.tourName.setText(tourInfoArrayList.get(position).tourName);
-        myViewHolder.tourLocation.setText(tourInfoArrayList.get(position).tourLocation);
-        myViewHolder.tourContent.setText(tourInfoArrayList.get(position).dataContent);
-        myViewHolder.homepage.setText(tourInfoArrayList.get(position).homepage);
-        myViewHolder.linearLayout.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                Intent intent = new Intent(mContext, LocationDialog.class);
-                intent.putExtra("name", data.getTourName());
-                intent.putExtra("location", data.getTourLocation() + "\n\n" + data.getHomepage());
-                intent.putExtra("url", data.getUrl());
-                intent.putExtra("dataContent", data.getDataContent());
-                //intent.putExtra("homepage", data.getHomepage());
-                mContext.startActivity(intent);
-            }
-        });
-
     }
 
     @Override
@@ -113,6 +83,7 @@ public class MyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         LinearLayout linearLayout;
         TextView tourContent;
         TextView homepage;
+
         public MyViewHolder(View view) {
             super(view);
             tourPicture = view.findViewById(R.id.tour_picture);
@@ -122,7 +93,6 @@ public class MyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             tourContent = view.findViewById(R.id.tour_content);
             homepage = view.findViewById(R.id.tour_homepage)
         }
-
     }
 
 }

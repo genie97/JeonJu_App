@@ -56,8 +56,6 @@ public class LocationDialog extends AppCompatActivity {
         String locat = getIntent().getStringExtra("location");
         String url = getIntent().getStringExtra("url");
         String des = getIntent().getStringExtra("des");
-        String homepage = getIntent().getStringExtra("homepage");
-
         task.execute(url); //uri 이미지로 뜨게.
         title_text.setText(name);
         location.setText(locat);
