@@ -64,7 +64,7 @@ public class GridViewAdapter extends BaseAdapter {
     public void modifyPlace(String name, int imageno, int position) {
         Place modify = place.get(position);
         modify.setName(name);
-        modify.setImgno(imageno);
+        //modify.setImgno(imageno);
         refresh();
     }
 }

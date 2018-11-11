@@ -41,15 +41,6 @@
         android:fontFamily="@font/binggraebold"
         android:text="결과 선택하기" />
 
-    <org.androidtown.jeonjuro2018.AddPlace
-        android:id="@+id/add"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_below="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
     <GridView
         android:id="@+id/grid"
         android:layout_width="match_parent"
@@ -59,7 +50,7 @@
         android:numColumns="3"
         android:verticalSpacing="15dp"
         android:horizontalSpacing="20dp"
-        android:layout_below="@+id/add"
+        android:layout_below="@+id/textView"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginTop="20dp"

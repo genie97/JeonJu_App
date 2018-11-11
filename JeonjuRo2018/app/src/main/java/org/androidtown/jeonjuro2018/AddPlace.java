@@ -43,7 +43,7 @@ public class AddPlace extends LinearLayout implements View.OnClickListener {
         if (v == b_add) {
             if(isAdd) {
                 onAddListener.onAdd(at.getText().toString(), imgno);
-                clear();
+                //clear();
             }
             else {
                 onAddListener.onModify(at.getText().toString(),imgno,pos);
@@ -51,8 +51,8 @@ public class AddPlace extends LinearLayout implements View.OnClickListener {
             }
         }
         else {
-            imgno = (imgno + 1) % Place.placeList.length;
-            img.setImageResource(Place.imglist[imgno]);
+            //imgno = (imgno + 1) % Place.placeList.length;
+            //img.setImageResource(Place.imglist[imgno]);
         }
     }
 
@@ -76,16 +76,16 @@ public class AddPlace extends LinearLayout implements View.OnClickListener {
         b_add.setText(msg);
         isAdd = flag;
         if(isAdd) {
-            clear();
+            //clear();
         }
         else {
             Place setData = onAddListener.getData(pos);
             at.setText(setData.getName());
-            img.setImageResource(Place.imglist[imgno = setData.getImagno()]);
+            //img.setImageResource(Place.imglist[imgno = setData.getImagno()]);
         }
     }
 
-    public void clear() {
+    /*public void clear() {
         img.setImageResource(Place.imglist[imgno = 0]);
-    }
+    }*/
 }

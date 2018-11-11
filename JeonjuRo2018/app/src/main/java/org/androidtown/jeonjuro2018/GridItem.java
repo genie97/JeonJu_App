@@ -28,6 +28,28 @@ public class GridItem extends LinearLayout {
 
     public void setData(Place one) {
         tv1.setText(one.getName());
-        img.setImageResource(Place.imglist[one.getImagno()]);
+        //img.setImageResource(Place.imglist[one.getImagno()]);
     }
 }
+
+    /*private class back extends AsyncTask<String, Integer,Bitmap> {
+        @Override
+        protected Bitmap doInBackground(String... urls) {
+            try{
+                URL myFileUrl = new URL(urls[0]);
+                HttpURLConnection conn = (HttpURLConnection)myFileUrl.openConnection();
+                conn.setDoInput(true);
+                conn.connect();
+                InputStream is = conn.getInputStream();
+                bmImg = BitmapFactory.decodeStream(is);
+
+            }catch(IOException e){
+                e.printStackTrace();
+            }
+            return bmImg;
+        }
+        protected void onPostExecute(Bitmap img){
+            img2.setImageBitmap(bmImg);
+        }
+    }*/
+
