@@ -27,9 +27,10 @@ public class TourMain extends AppCompatActivity {
         tourRecyclerView.setLayoutManager(tourLayoutManager);
 
         ArrayList<TourInfo> tourInfoArrayList = new ArrayList<>();
-      //  tourInfoArrayList.add(new TourInfo(R.drawable.tour,"전주한옥2","위치는~"));
-      //  tourInfoArrayList.add(new TourInfo(R.drawable.tour,"전주한옥3","위치는~"));
-      //  tourInfoArrayList.add(new TourInfo(R.drawable.tour,"전주한옥4","위치는~"));
+
+        tourInfoArrayList.add(new TourInfo(R.drawable.tour,"전주한옥2","위치는~"));
+        tourInfoArrayList.add(new TourInfo(R.drawable.tour,"전주한옥3","위치는~"));
+        tourInfoArrayList.add(new TourInfo(R.drawable.tour,"전주한옥4","위치는~"));
 
         View.OnClickListener mListener = new View.OnClickListener() {
             @Override
@@ -39,8 +40,10 @@ public class TourMain extends AppCompatActivity {
             }
         };
 
-     //   MyAdapter myAdapter = new MyAdapter(this,tourInfoArrayList,mListener);
-     //   tourRecyclerView.setAdapter(myAdapter);
+
+        MyAdapter myAdapter = new MyAdapter(this,tourInfoArrayList,mListener);
+        tourRecyclerView.setAdapter(myAdapter);
+
     }
     private void setCustomActionbar() {
         ActionBar actionBar = getSupportActionBar();

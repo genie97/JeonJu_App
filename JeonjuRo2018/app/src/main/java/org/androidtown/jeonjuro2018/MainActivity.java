@@ -1,14 +1,19 @@
 package org.androidtown.jeonjuro2018;
 
+
 import android.content.Context;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
+
+import android.provider.MediaStore;
+
 import android.support.v7.app.ActionBar;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
+
 import android.widget.HorizontalScrollView;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -34,11 +39,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     ImageView imageView;
  HorizontalScrollView scrollbar_accomo;
 RadioButton homeTopbar;
+
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setCustomActionbar();
+
         homeTopbar = (RadioButton)findViewById(R.id.home_topbar);
        homeTopbar.toggle();
 
@@ -53,6 +61,7 @@ RadioButton homeTopbar;
      //   scrollbar_accomo.setHorizontalScrollBarEnabled(false);
         RadioButton schedule_topbar = (RadioButton) findViewById(R.id.schedule_topbar);
         RadioButton custom_topbar = (RadioButton) findViewById(R.id.custom_topbar);
+
         tourBtn.setOnClickListener(this);
         restBtn.setOnClickListener(this);
         accomoBtn.setOnClickListener(this);
@@ -75,6 +84,7 @@ RadioButton homeTopbar;
         parent.setContentInsetsAbsolute(0, 0);
 
         ActionBar.LayoutParams params = new ActionBar.LayoutParams(ActionBar.LayoutParams.WRAP_CONTENT);
+
         actionBar.setCustomView(mCustomView, params);
     }
 
@@ -99,5 +109,3 @@ RadioButton homeTopbar;
         }
     }
 }
-
-

@@ -12,6 +12,11 @@ public class Place {
     private int imgno;
 
     public Place (String name, int imgno) {
+
+    public   String name;
+    public String imgno;
+
+    public Place (String name, String imgno) {
         this.name = name;
         this.imgno = imgno;
     }
@@ -24,11 +29,18 @@ public class Place {
         this.name = name;
     }
 
+
     public int getImagno() {
         return imgno;
     }
 
     public void setImgno(int imgno) {
+
+    public String getImagno() {
+        return imgno;
+    }
+
+    public void setImgno(String imgno) {
         this.imgno = imgno;
     }
 }
