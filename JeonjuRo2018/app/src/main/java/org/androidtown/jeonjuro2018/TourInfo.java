@@ -57,3 +57,6 @@ public class TourInfo {
         this.homepage=homepage;
     }
 }
+
+}
+

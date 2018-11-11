@@ -12,6 +12,7 @@ public class Place {
     private int imgno;
 
     public Place (String name, int imgno) {
+
         this.name = name;
         this.imgno = imgno;
     }
@@ -29,6 +30,7 @@ public class Place {
     }
 
     public void setImgno(int imgno) {
+
         this.imgno = imgno;
     }
 }

@@ -10,6 +10,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 
+
 import java.util.ArrayList;
 
 public class AccomoMain extends AppCompatActivity {
@@ -28,11 +29,6 @@ public class AccomoMain extends AppCompatActivity {
         accomoRecyclerView.setLayoutManager(accomoLayoutManager);
 
 
-        ArrayList<TourInfo> tourInfoArrayList = new ArrayList<>();
-        //tourInfoArrayList.add(new TourInfo(R.drawable.accomo,"전주한옥2","위치는~"));
-        //tourInfoArrayList.add(new TourInfo(R.drawable.accomo,"전주한옥3","위치는~"));
-        //tourInfoArrayList.add(new TourInfo(R.drawable.accomo,"전주한옥4","위치는~"));
-
         View.OnClickListener mListener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -44,8 +40,6 @@ public class AccomoMain extends AppCompatActivity {
         MyAdapter myAdapter = new MyAdapter(this,tourInfoArrayList);
         accomoRecyclerView.setAdapter(myAdapter);
     }
-
-
 
     private void setCustomActionbar() {
         ActionBar actionBar = getSupportActionBar();
@@ -64,6 +58,5 @@ public class AccomoMain extends AppCompatActivity {
         ActionBar.LayoutParams params = new ActionBar.LayoutParams(ActionBar.LayoutParams.MATCH_PARENT);
         actionBar.setCustomView(mCustomView,params);
     }
-
 
 }

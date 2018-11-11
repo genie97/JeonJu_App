@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         ImageButton restBtn = (ImageButton) findViewById(R.id.restBtn);
         ImageButton accomoBtn = (ImageButton) findViewById(R.id.accomoBtn);
 
+
         RadioButton schedule_topbar = (RadioButton) findViewById(R.id.schedule_topbar);
         RadioButton custom_topbar = (RadioButton) findViewById(R.id.custom_topbar);
 

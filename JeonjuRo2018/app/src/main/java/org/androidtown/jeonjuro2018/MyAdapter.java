@@ -2,6 +2,7 @@ package org.androidtown.jeonjuro2018;
 
 import android.content.Context;
 import android.content.Intent;
+
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -19,10 +20,10 @@ public class MyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     Context mContext;
     ArrayList<TourInfo> tourInfoArrayList;
 
-
     public MyAdapter(Context context, ArrayList<TourInfo> items) {
         this.mContext = context;
         this.tourInfoArrayList = items;
+
     }
 
     @NonNull
@@ -71,10 +72,12 @@ public class MyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         ImageView tourPicture;
         TextView tourName;
         TextView tourLocation;
+
         LinearLayout linearLayout;
         TextView tourContent;
         TextView homepage;
         public MyViewHolder(View view) {
+
             super(view);
             tourPicture = view.findViewById(R.id.tour_picture);
             tourName = view.findViewById(R.id.tour_name);
@@ -87,3 +90,4 @@ public class MyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     }
 
 }
+
