@@ -5,10 +5,14 @@ package org.androidtown.jeonjuro2018;
  */
 
 public class Place {
-    public   String name;
-    public String imgno;
+    final static String placeList[] = {"안압지","한옥마을","전주","그리드뷰"};
+    final static int imglist[] = {R.drawable.pocket,};
 
-    public Place (String name, String imgno) {
+    private  String name;
+    private int imgno;
+
+    public Place (String name, int imgno) {
+
         this.name = name;
         this.imgno = imgno;
     }
@@ -21,11 +25,12 @@ public class Place {
         this.name = name;
     }
 
-    public String getImagno() {
+    public int getImagno() {
         return imgno;
     }
 
-    public void setImgno(String imgno) {
+    public void setImgno(int imgno) {
+
         this.imgno = imgno;
     }
 }

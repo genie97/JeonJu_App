@@ -16,6 +16,7 @@ import java.util.ArrayList;
 public class AccomoMain extends AppCompatActivity {
     RecyclerView accomoRecyclerView;
     RecyclerView.LayoutManager accomoLayoutManager;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,10 +28,6 @@ public class AccomoMain extends AppCompatActivity {
         accomoLayoutManager = new LinearLayoutManager(this);
         accomoRecyclerView.setLayoutManager(accomoLayoutManager);
 
-        ArrayList<TourInfo> tourInfoArrayList = new ArrayList<>();
-        tourInfoArrayList.add(new TourInfo(R.drawable.accomo,"전주한옥2","위치는~"));
-        tourInfoArrayList.add(new TourInfo(R.drawable.accomo,"전주한옥3","위치는~"));
-        tourInfoArrayList.add(new TourInfo(R.drawable.accomo,"전주한옥4","위치는~"));
 
         View.OnClickListener mListener = new View.OnClickListener() {
             @Override
@@ -40,9 +37,10 @@ public class AccomoMain extends AppCompatActivity {
             }
         };
 
-        MyAdapter myAdapter = new MyAdapter(this,tourInfoArrayList,mListener);
+        MyAdapter myAdapter = new MyAdapter(this,tourInfoArrayList);
         accomoRecyclerView.setAdapter(myAdapter);
     }
+
     private void setCustomActionbar() {
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayShowCustomEnabled(true);
@@ -60,4 +58,5 @@ public class AccomoMain extends AppCompatActivity {
         ActionBar.LayoutParams params = new ActionBar.LayoutParams(ActionBar.LayoutParams.MATCH_PARENT);
         actionBar.setCustomView(mCustomView,params);
     }
+
 }

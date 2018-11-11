@@ -2,6 +2,7 @@ package org.androidtown.jeonjuro2018;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
+
 import android.os.StrictMode;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -12,16 +13,15 @@ import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
-
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserFactory;
-
 import java.net.URL;
 import java.util.ArrayList;
 
 public class RestMain extends AppCompatActivity {
     RecyclerView restRecyclerView;
     RecyclerView.LayoutManager restLayoutManager;
+
 
     boolean storeName = false, storeAddr = false, storeMenu = false, storeImg = false, storeOpen = false, b_holiday = false, b_opentime = false;
     String storeNm = null, storeAd = null, Menu = null, ImgURL = null, storeop = null, holiday = null, opentime = null;
@@ -31,6 +31,7 @@ public class RestMain extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rest_main);
         setCustomActionbar();
+
 
         StrictMode.enableDefaults();
 
@@ -536,6 +537,7 @@ public class RestMain extends AppCompatActivity {
 
         FoodAdapter myAdapter = new FoodAdapter(this,foodInfoArrayList,mListener);
         restRecyclerView.setAdapter(myAdapter);
+
     }
 
 
@@ -556,4 +558,6 @@ public class RestMain extends AppCompatActivity {
         ActionBar.LayoutParams params = new ActionBar.LayoutParams(ActionBar.LayoutParams.MATCH_PARENT);
         actionBar.setCustomView(mCustomView,params);
     }
+
 }
+

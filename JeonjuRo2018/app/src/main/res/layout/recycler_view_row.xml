@@ -12,6 +12,7 @@
     app:cardElevation="5dp">
 
     <LinearLayout
+        android:id="@+id/linear"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal">
@@ -37,7 +38,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:text="전주 한옥집"
-                android:fontFamily="@font/binggrae"
+                android:fontFamily="@font/binggraebold"
                 android:textSize="20sp" />
 
             <TextView
@@ -48,7 +49,19 @@
                 android:layout_gravity="center_vertical"
                 android:text="위치"
                 android:fontFamily="@font/binggrae"
-                android:textSize="20sp" />
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tour_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="0sp" />
+            <TextView
+                android:id="@+id/tour_homepage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="0sp" />
+
 
         </RelativeLayout>
     </LinearLayout>
