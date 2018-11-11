@@ -5,10 +5,13 @@ import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Handler;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatDialog;
+import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -37,7 +40,7 @@ public class CustomActivity extends AppCompatActivity implements Button.OnClickL
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_custom);
-
+        setCustomActionbar();
         oneday = findViewById(R.id.oneday);
         twoday = findViewById(R.id.twoday);
         threeday = findViewById(R.id.threeday);
@@ -393,5 +396,23 @@ public class CustomActivity extends AppCompatActivity implements Button.OnClickL
                 startActivity(new Intent(CustomActivity.this, Otherway.class));
             }
         }, 2000);
+    }
+    private void setCustomActionbar() {
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayShowCustomEnabled(true);
+        actionBar.setDisplayHomeAsUpEnabled(false);
+        actionBar.setDisplayShowTitleEnabled(false);
+
+        //set custom view layout
+        View mCustomView = LayoutInflater.from(this).inflate(R.layout.actionbar_main, null);
+        actionBar.setCustomView(mCustomView);
+
+        //set no padding both side
+        Toolbar parent = (Toolbar) mCustomView.getParent();
+        parent.setContentInsetsAbsolute(0, 0);
+
+        ActionBar.LayoutParams params = new ActionBar.LayoutParams(ActionBar.LayoutParams.WRAP_CONTENT);
+
+        actionBar.setCustomView(mCustomView, params);
     }
 }

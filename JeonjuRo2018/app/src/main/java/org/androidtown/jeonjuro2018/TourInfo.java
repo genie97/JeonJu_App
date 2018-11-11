@@ -8,7 +8,7 @@ public class TourInfo {
     public String tourName;
     public String tourLocation;
     public String dataContent;
-public String homepage;
+    public String homepage;
 
     public TourInfo(String url, String tourName, String tourLocation, String dataContent, String homepage) {
         this.url = url;
@@ -49,11 +49,15 @@ public String homepage;
     public void setDataContent(String dataContent) {
         this.dataContent = dataContent;
     }
+
     public String getHomepage() {
         return homepage;
     }
 
     public void setHomepage(String homepage) {
-        this.homepage=homepage;
+        this.homepage = homepage;
     }
 }
+
+
+

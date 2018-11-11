@@ -1,11 +1,13 @@
 package org.androidtown.jeonjuro2018;
 
 import android.content.Intent;
+
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.os.StrictMode;
 import android.provider.ContactsContract;
+
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -14,6 +16,7 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
+
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -27,11 +30,14 @@ import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.channels.Channel;
+
+
 import java.util.ArrayList;
 
 public class AccomoMain extends AppCompatActivity {
     RecyclerView accomoRecyclerView;
     RecyclerView.LayoutManager accomoLayoutManager;
+
     boolean inAddr = false, infileImg = false, indataTtitle = false, infileUrl = false, indataSid = false;
     boolean inhonokTypeStr = false, inhomepage = false, inintroContent = false, indataContent = false;
     String addr = null, dataTitle = null, fileUrl = null, dataSid = null, honokTypeStr = null, homepage = null, introContent = null, dataContent = null;
@@ -45,6 +51,7 @@ public class AccomoMain extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_accomo_main);
         setCustomActionbar();
+
         imageView = findViewById(R.id.tour_picture);
         accomoRecyclerView = findViewById(R.id.recycler_view);
         accomoRecyclerView.setHasFixedSize(true);
@@ -57,6 +64,7 @@ public class AccomoMain extends AppCompatActivity {
             String rl = "http://openapi.jeonju.go.kr/rest/hanokhouse/getHanokHouseList?authApiKey=";
             String key = "ScrjsS29GxaRJI8NXJCbrR%2FZMklimX6gTqyIBSWjMy7zt3w3HbzAgsL7%2BLFN6avz3jq%2BkA4YaW49yCNARnKvUQ%3D%3D";
             URL url = new URL(rl + key);
+
 
             XmlPullParserFactory parserCreator = XmlPullParserFactory.newInstance();
             XmlPullParser parser = parserCreator.newPullParser();
@@ -114,9 +122,9 @@ public class AccomoMain extends AppCompatActivity {
                         if (parser.getName().equals("list")) {
                             comeonImage(dataSid);
                             if (i != 1) {
-                                tourInfoArrayList.add(new TourInfo(fileUrl, dataTitle, addr,introContent, homepage));
+                                tourInfoArrayList.add(new TourInfo(fileUrl, dataTitle, addr, introContent, homepage));
                             } else {
-                                tourInfoArrayList.add(new TourInfo("http://tour.jeonju.go.kr/planweb/upload/9be517a74f72e96b014f820463970068/inine/content/preview/2dc57345-3f23-47d7-842c-712ca4807a78.jpg.png", dataTitle, addr,introContent, homepage));
+                                tourInfoArrayList.add(new TourInfo("http://tour.jeonju.go.kr/planweb/upload/9be517a74f72e96b014f820463970068/inine/content/preview/2dc57345-3f23-47d7-842c-712ca4807a78.jpg.png", dataTitle, addr, introContent, homepage));
                                 i = 0;
                             }
                         }
@@ -173,6 +181,7 @@ public class AccomoMain extends AppCompatActivity {
         }
     }
 
+
     private void setCustomActionbar() {
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayShowCustomEnabled(true);
@@ -189,5 +198,7 @@ public class AccomoMain extends AppCompatActivity {
 
         ActionBar.LayoutParams params = new ActionBar.LayoutParams(ActionBar.LayoutParams.MATCH_PARENT);
         actionBar.setCustomView(mCustomView, params);
+
     }
+
 }
