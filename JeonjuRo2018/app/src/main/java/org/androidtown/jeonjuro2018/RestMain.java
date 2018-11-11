@@ -544,6 +544,7 @@ public class RestMain extends AppCompatActivity {
         };
         FoodAdapter myAdapter = new FoodAdapter(this,foodInfoArrayList,mListener);
         restRecyclerView.setAdapter(myAdapter);
+
     }
 
     private void setCustomActionbar() {

@@ -31,7 +31,6 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.channels.Channel;
 
-
 import java.util.ArrayList;
 
 public class AccomoMain extends AppCompatActivity {
@@ -180,7 +179,6 @@ public class AccomoMain extends AppCompatActivity {
         } catch (Exception e) {
         }
     }
-
 
     private void setCustomActionbar() {
         ActionBar actionBar = getSupportActionBar();

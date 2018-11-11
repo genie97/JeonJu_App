@@ -30,6 +30,8 @@ public class MyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         this.tourInfoArrayList = items;
 
     }
+
+    }
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -57,11 +59,16 @@ public class MyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                 intent.putExtra("name", data.getTourName());
                 intent.putExtra("location", data.getTourLocation()+"\n" + data.getHomepage());
                 intent.putExtra("url", data.getUrl());
-                intent.putExtra("des", data.getDataContent());
+                intent.putExtra("dataContent", data.getDataContent());
+              
                 mContext.startActivity(intent);
             }
         });
+
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.recycler_view_row, parent, false);
+        return new MyViewHolder(v);
     }
+
     @Override
     public int getItemCount() {
         return tourInfoArrayList.size();
@@ -84,8 +91,15 @@ public class MyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             tourLocation = view.findViewById(R.id.tour_location);
             linearLayout = view.findViewById(R.id.linear);
             tourContent = view.findViewById(R.id.tour_content);
-            homepage = view.findViewById(R.id.tour_homepage);
+            homepage = view.findViewById(R.id.tour_homepage)
         }
     }
 
 }
+
+        }
+
+    }
+
+}
+

@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     HorizontalScrollView scrollbar_accomo;
     RadioButton homeTopbar;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,6 +49,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         homeTopbar = (RadioButton) findViewById(R.id.home_topbar);
         homeTopbar.toggle();
+
 
         Intent intent = new Intent(this, SplashActivity.class);
         startActivity(intent);
@@ -58,6 +60,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //     scrollbar_accomo = (HorizontalScrollView) findViewById(R.id.s);
         //    scrollbar_accomo.setVerticalScrollBarEnabled(false);
         //   scrollbar_accomo.setHorizontalScrollBarEnabled(false);
+
 
         RadioButton schedule_topbar = (RadioButton) findViewById(R.id.schedule_topbar);
         RadioButton custom_topbar = (RadioButton) findViewById(R.id.custom_topbar);
