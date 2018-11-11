@@ -66,6 +66,7 @@ public class AccomoMain extends AppCompatActivity {
             String key = "ScrjsS29GxaRJI8NXJCbrR%2FZMklimX6gTqyIBSWjMy7zt3w3HbzAgsL7%2BLFN6avz3jq%2BkA4YaW49yCNARnKvUQ%3D%3D";
             URL url = new URL(rl + key);
 
+
             XmlPullParserFactory parserCreator = XmlPullParserFactory.newInstance();
             XmlPullParser parser = parserCreator.newPullParser();
             parser.setInput(url.openStream(), null);
@@ -201,4 +202,5 @@ public class AccomoMain extends AppCompatActivity {
         actionBar.setCustomView(mCustomView, params);
 
     }
+
 }

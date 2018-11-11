@@ -59,6 +59,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
    //     scrollbar_accomo = (HorizontalScrollView) findViewById(R.id.s);
     //    scrollbar_accomo.setVerticalScrollBarEnabled(false);
      //   scrollbar_accomo.setHorizontalScrollBarEnabled(false);
+
         RadioButton schedule_topbar = (RadioButton) findViewById(R.id.schedule_topbar);
         RadioButton custom_topbar = (RadioButton) findViewById(R.id.custom_topbar);
 

@@ -1,7 +1,6 @@
 package org.androidtown.jeonjuro2018;
 
 import android.content.Context;
-
 import android.content.Intent;
 
 import android.support.annotation.NonNull;
@@ -35,7 +34,6 @@ public class MyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.recycler_view_row, parent, false);
         return new MyViewHolder(v);
     }
@@ -69,17 +67,36 @@ public class MyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
 
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.recycler_view_row, parent, false);
-
         return new MyViewHolder(v);
     }
+
+
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-
+        final  TourInfo data = tourInfoArrayList.get(position);
         MyViewHolder myViewHolder = (MyViewHolder) holder;
 
-        myViewHolder.tourPicture.setImageResource(tourInfoArrayList.get(position).drawableId);
+        Glide.with(mContext)
+                .load(data.getUrl()).asBitmap()
+                .fitCenter()
+                .into(((MyViewHolder) holder).tourPicture);
         myViewHolder.tourName.setText(tourInfoArrayList.get(position).tourName);
         myViewHolder.tourLocation.setText(tourInfoArrayList.get(position).tourLocation);
+        myViewHolder.tourContent.setText(tourInfoArrayList.get(position).dataContent);
+        myViewHolder.homepage.setText(tourInfoArrayList.get(position).homepage);
+        myViewHolder.linearLayout.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(mContext, LocationDialog.class);
+                intent.putExtra("name", data.getTourName());
+                intent.putExtra("location", data.getTourLocation() + "\n\n" + data.getHomepage());
+                intent.putExtra("url", data.getUrl());
+                intent.putExtra("dataContent", data.getDataContent());
+                //intent.putExtra("homepage", data.getHomepage());
+                mContext.startActivity(intent);
+            }
+        });
+
     }
 
     @Override
@@ -97,27 +114,22 @@ public class MyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         TextView tourContent;
         TextView homepage;
         public MyViewHolder(View view) {
-
-
-        MyViewHolder(View view) {
             super(view);
             tourPicture = view.findViewById(R.id.tour_picture);
             tourName = view.findViewById(R.id.tour_name);
             tourLocation = view.findViewById(R.id.tour_location);
             linearLayout = view.findViewById(R.id.linear);
             tourContent = view.findViewById(R.id.tour_content);
-            homepage = view.findViewById(R.id.tour_homepage);
+            homepage = view.findViewById(R.id.tour_homepage)
         }
 
     }
 
 }
 
-
-            if(mListener !=null)
-                view.setOnClickListener(mListener);
         }
+
     }
 
- }
+}
 

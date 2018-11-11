@@ -20,7 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/binggraebold"
-            android:gravity="center"
+
             android:text="장소명"
             android:textColor="@android:color/black"
             android:textSize="25sp" />
@@ -29,7 +29,6 @@
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="230dp"
-
         android:padding="10dp">
 
         <ImageView
@@ -78,6 +77,33 @@
             android:autoLink="web"
             android:linksClickable="true"
             android:fontFamily="@font/binggrae"/>
+        </ScrollView>
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_toRightOf="@id/tourImage"
+            android:padding="10dp">
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="199dp"
+                android:layout_height="80dp"
+                android:layout_toRightOf="@+id/tourImage"
+                android:text="위치"
+                android:textSize="13sp" />
+        </ScrollView>
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tourImage"
+            android:paddingTop="20dp">
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/tourImage"
+                android:textSize ="10sp"
+                android:autoLink="web"
+                android:linksClickable="true"
+                />
         </ScrollView>
     </RelativeLayout>
     <LinearLayout

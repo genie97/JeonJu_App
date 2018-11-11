@@ -4,6 +4,7 @@ import android.content.Intent;
 
 import android.graphics.Bitmap;
 
+import android.os.StrictMode;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -14,10 +15,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 
 import android.widget.ImageView;
-
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserFactory;
-
 import java.net.URL;
 import java.util.ArrayList;
 
@@ -547,6 +546,7 @@ public class RestMain extends AppCompatActivity {
 
         FoodAdapter myAdapter = new FoodAdapter(this,foodInfoArrayList,mListener);
         restRecyclerView.setAdapter(myAdapter);
+
     }
 
     private void setCustomActionbar() {
@@ -569,5 +569,4 @@ public class RestMain extends AppCompatActivity {
 
 }
 
-}
 
